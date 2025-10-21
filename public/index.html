@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebSocket AV senza ffmpeg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: sans-serif; margin: 20px; }
+      video { width: 48%; background: black; }
+      button { padding: 8px 14px; margin-right: 10px; }
+      pre { background: #111; color: #ddd; padding: 10px; height: 180px; overflow: auto; }
+    </style>
+  </head>
+  <body>
+    <h2>Streaming video/audio via WebSocket</h2>
+    <video id="local" autoplay muted playsinline></video>
+    <video id="remote" autoplay playsinline></video>
+    <br /><br />
+    <button id="startBtn">Avvia</button>
+    <button id="stopBtn" disabled>Ferma</button>
+    <pre id="log"></pre>
+    <script src="client.js"></script>
+  </body>
+</html>
